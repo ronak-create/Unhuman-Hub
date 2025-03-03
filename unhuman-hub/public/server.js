@@ -14,7 +14,7 @@ app.use(express.json());
 // CORS setup
 app.use(
   cors({
-    origin: "http://localhost:3000", // React app's URL
+    origin: "mongodb+srv://ronak:r1o2n3a4k5@cluster0.vrwv6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", // React app's URL
     methods: "GET,POST,PUT,DELETE,OPTIONS", 
     allowedHeaders: "Content-Type,Authorization, Access-Control-Allow-Origin", 
     credentials: true, 
@@ -24,7 +24,7 @@ app.use(
 
 // MongoDB connection
 mongoose
-  .connect("mongodb://localhost:27017/unhuman_hub", {
+  .connect("mongodb+srv://ronak:r1o2n3a4k5@cluster0.vrwv6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
